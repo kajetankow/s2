@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+        function f() {
+ 
+            var a = document.getElementById("a").value;
+            a = parseFloat(a);
+            var b = document.getElementById("b").value;
+            b = parseFloat(b);
+            var c = 0;
+            c = a + b;
+            document.getElementById("wynik").innerHTML = c;
+        }
+        function g() {
+ 
+ var a = document.getElementById("a").value;
+ a = parseFloat(a);
+ var b = document.getElementById("b").value;
+ b = parseFloat(b);
+ var c = 0;
+ c = a - b;
+ document.getElementById("wynik").innerHTML = c;
+}
+function h() {
+ 
+ var a = document.getElementById("a").value;
+ a = parseFloat(a);
+ var b = document.getElementById("b").value;
+ b = parseFloat(b);
+ var c = 0;
+ c = a * b;
+ document.getElementById("wynik").innerHTML = c;
+}
+function i() {
+ 
+ var a = document.getElementById("a").value;
+ a = parseFloat(a);
+ var b = document.getElementById("b").value;
+ b = parseFloat(b);
+ var c = 0;
+ c = a / b;
+ document.getElementById("wynik").innerHTML = c;
+}
+ 
+    </script>
+ 
+</head>
+<style>
+input{
+    background-color: #aad5ec;
+    font-size: 30px;
+    font-family:monospace;
+    padding: 5px 32px;
+    display: inline-block;
+    border: 8px solid #505050;
+    margin-top: 10px;
+    }
+    #wynik{
+        display: inline-block;
+        border: 8px solid #505050;
+        padding: 5px 32px;
+        background-color: cornsilk;
+        font-size: 30px;
+        min-width: 260px;
+        border-radius: 0px;
+
+    }
+    #content
+	{
+		
+		font-family: 'PT Sans Narrow', sans-serif;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+        margin-top: 10%;
+		background-color:rgb(102, 102, 102);
+        min-height: 400px
+    
+        
+        
+    }
+    button{
+        background-color: #2f80ad;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family:monospace;
+    padding: 5px 12px;
+    display: inline-block;
+    border: 5px solid #12234a;
+    }
+    h3{
+        font-family: sans-serif;
+    color: rgb(61, 93, 219);
+    text-align: center;
+    position: relative;
+	font-size: 24px;
+    letter-spacing: 10px;
+    background-color: darkgray;
+    }
+    body{
+        background-image: url(https://cdn.hipwallpaper.com/i/33/26/Oz9tHm.jpg);
+    }
+</style>
+ 
+<body>
+   <div id="content" >
+    <center>
+       <h3>KALKULATOR</h3> 
+    
+    <input type="text" id="a" value="a" size="10">
+    </br>
+ 
+    
+    <input type="text" id="b" value="b" size="10">
+    <br>
+    <br>
+    <button id="wynik" disabled><strong>=</strong></button>
+    <br>
+    <br>
+    
+    <button onclick="f()"><strong>+</strong></button>
+    <button onclick="g()"><strong>-</strong></button>
+    <button onclick="h()"><strong>×</strong></button>
+    <button onclick="i()"><strong>÷</strong></button>
+    </center>
+    </div>
+</body>
+ 
+</html>
